@@ -1,0 +1,36 @@
+.card-presentation {
+    font-family: 'Roboto', sans-serif;
+    color: azure;
+}
+
+.card {
+    background-color: #23689b;
+    border: solid #1a508b;
+    border-radius: 0.7rem;
+}
+
+.question {
+    font-family: 'Sriracha', cursive;
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 1rem;
+}
+
+.answers {
+    font-family: 'Lemonada', cursive;
+    color: azure;
+}
+
+.label-selector {
+    color: aliceblue;
+    font-size: 18px;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+.title-font {
+    font-family: 'Potta One', cursive;
+}
+
+.hide-card {
+    display: none
+}
