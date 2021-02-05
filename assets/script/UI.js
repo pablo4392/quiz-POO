@@ -1,6 +1,16 @@
 class UI {
-    static removeClass(){
-        $('#trivia-card').removeClass('hide-card');
+    static startGame() {
+        const cardStart = document.getElementById('card-presentation');
+        const triviaCard = document.getElementById('trivia-card');
+        cardStart.classList.add('hide-element');
+        triviaCard.classList.remove('hide-element');
+    }
+
+    static showScoreButton() {
+        const scoreButton = document.getElementById('score-container');
+        const triviaCard = document.getElementById('trivia-card');
+        triviaCard.classList.add('hide-element');
+        scoreButton.classList.remove('hide-element');
     }
 
     static printCategories(categories) {
@@ -42,6 +52,20 @@ class UI {
                                                 </div>
                                             </div>`
         });
+    }
+
+    static getScore() {
+        const questionContainer = document.getElementById('questions-container');
+        const scoreContainer = document.getElementById('score-container')
+        questionContainer.innerHTML = '';
+        scoreContainer.innerHTML = `<div class="col col-md-6 mb-5">
+                                        <div class="card card-score">
+                                            <div class="card-body">
+                                                <h3>YOUR SCORE IS</h3>
+                                                <P> este</P>
+                                            </div>
+                                        </div>
+                                    </div>`
     }
 }
 

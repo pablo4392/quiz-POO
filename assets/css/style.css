@@ -31,6 +31,15 @@
     font-family: 'Potta One', cursive;
 }
 
-.hide-card {
+.hide-element {
     display: none
+}
+
+.card-score {
+    text-align: center;
+    border: solid #0a043c 5px;
+    border-radius: 1rem;
+    color: antiquewhite;
+    font-family: 'Coda Caption', sans-serif;
+    background-color: #0e49b5;
 }
