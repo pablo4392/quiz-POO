@@ -58,11 +58,23 @@ class UI {
         const questionContainer = document.getElementById('questions-container');
         const scoreContainer = document.getElementById('score-container')
         questionContainer.innerHTML = '';
+        let i = 0;
+        let total = 0; 
+
+        while(i < 10) {
+            const result = document.querySelector(`input[name="card-${i}"]:checked`).value;
+            console.log(result);
+            i++
+            if (result == 1) {
+                total += 1
+            }
+        }
+
         scoreContainer.innerHTML = `<div class="col col-md-6 mb-5">
                                         <div class="card card-score">
                                             <div class="card-body">
                                                 <h3>YOUR SCORE IS</h3>
-                                                <P> este</P>
+                                                <P>${total}</P>
                                             </div>
                                         </div>
                                     </div>`
